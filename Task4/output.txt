@@ -1,0 +1,39 @@
+% oc describe project local-project
+Name:           local-project
+Created:        17 seconds ago
+Labels:         kubernetes.io/metadata.name=local-project
+                name=local-project
+                pod-security.kubernetes.io/audit=restricted
+                pod-security.kubernetes.io/audit-version=v1.24
+                pod-security.kubernetes.io/warn=restricted
+                pod-security.kubernetes.io/warn-version=v1.24
+Annotations:    openshift.io/description=
+                openshift.io/display-name=
+                openshift.io/requester=developer
+                openshift.io/sa.scc.mcs=s0:c26,c25
+                openshift.io/sa.scc.supplemental-groups=1000700000/10000
+                openshift.io/sa.scc.uid-range=1000700000/10000
+Display Name:   <none>
+Description:    <none>
+Status:         Active
+Node Selector:  <none>
+Quota:
+        Name:           compute-resources
+        Resource        Used    Hard
+        --------        ----    ----
+        limits.cpu      0       4
+        limits.memory   0       2Gi
+        pods            0       20
+        requests.cpu    0       2
+        requests.memory 0       1Gi
+Resource limits:
+        Name:           resource-limits
+        Type            Resource        Min     Max     Default Request Default Limit   Max Limit/Request Ratio
+        ----            --------        ---     ---     --------------- -------------   -----------------------
+        Container       memory          -       100Mi   50Mi            50Mi            -
+        Container       cpu             -       200m    100m            100m            -
+
+% oc get networkpolicy
+NAME                           POD-SELECTOR   AGE
+allow-from-openshift-ingress   <none>         67s
+allow-same-namespace           <none>         67s
