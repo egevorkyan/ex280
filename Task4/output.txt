@@ -1,8 +1,8 @@
-% oc describe project local-project
-Name:           local-project
+% oc describe project test-project
+Name:           test-project
 Created:        17 seconds ago
-Labels:         kubernetes.io/metadata.name=local-project
-                name=local-project
+Labels:         kubernetes.io/metadata.name=test-project
+                name=test-project
                 pod-security.kubernetes.io/audit=restricted
                 pod-security.kubernetes.io/audit-version=v1.24
                 pod-security.kubernetes.io/warn=restricted

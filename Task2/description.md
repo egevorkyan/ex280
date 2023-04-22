@@ -2,7 +2,7 @@
 - The group admins has admin permissions on the cluster
 - The group developers has view and edit permissions on the cluster
 - The group viewers has view permissions on the cluster
-- User anouk has view and edit permissions on the namespace test-namespace
+- User daemon has view and edit permissions on the namespace daemon-namespace
 
 ### Solution:
 1. oc adm policy add-cluster-role-to-group <ROLE> <GROUP>
