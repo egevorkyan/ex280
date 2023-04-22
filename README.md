@@ -1,4 +1,4 @@
-## Tasks are prepared by me for myself
+## Self training tasks
 
 > **Notes:**
 >
